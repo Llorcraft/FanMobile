@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FanApp.Views.AboutPage"
+             xmlns:vm="clr-namespace:FanApp.ViewModels"
+             NavigationPage.HasNavigationBar="True"
+             Title="{Binding Title}"
+             BackgroundColor="White">
+    
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Cancelar" Clicked="OnCancel"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#5C5AA8</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Grid.Row="0" Source="header.png" HorizontalOptions="Fill" Aspect="AspectFit" />
+        
+        <ScrollView Grid.Row="1">
+            <StackLayout Padding="16,20,16,40" Spacing="10">
+                <Label FontSize="16" Margin="0,0,0,20">Los campos marcados con * son requeridos.</Label>
+                
+                <Label>Tratamiento</Label>
+                <Picker x:Name="title"></Picker>
+
+                <Label>Nombre*</Label>
+                <Entry x:Name="firstName" TextChanged="OnTextChanged"></Entry>
+
+                <Label>Apellidos*</Label>
+                <Entry x:Name="lastName" TextChanged="OnTextChanged"></Entry>
+
+                <Label>Tu correo electrónico*</Label>
+                <Entry x:Name="email" Keyboard="Email" TextChanged="OnEmailChanged"></Entry>
+
+                <Label>Teléfono de contacto*</Label>
+                <Entry x:Name="phone" Keyboard="Telephone" TextChanged="OnTextChanged"></Entry>
+
+                <Label>Fecha de cumpleaños*</Label>
+                <DatePicker x:Name="birthday" Format="dd/MM/yyyy"></DatePicker>
+
+                <Label>Código postal</Label>
+                <Entry x:Name="postalCode" Keyboard="Numeric"></Entry>
+
+                <Label>Contraseña*</Label>
+                <Entry x:Name="password" Keyboard="Text" IsPassword="True" TextChanged="OnTextChanged"></Entry>
+
+                <Label>Confirmar contraseña*</Label>
+                <Entry x:Name="confirmPassword" Keyboard="Text" IsPassword="True" TextChanged="OnConfirmPasswordChanged"></Entry>
+
+                <Label x:Name="labelComments">Comentarios/Observaciones</Label>
+                <Editor x:Name="comments" HeightRequest="160" IsSpellCheckEnabled="True"></Editor>
+
+                <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" x:Name="gridConditions">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.1*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <CheckBox Grid.Column="0" x:Name="accept" Color="Green"></CheckBox>
+                    <Label Grid.Column="1" Padding="0,5,0,0">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="He leído y acepto la " />
+                                <Span Text="Política de Privacidad" TextColor="{StaticResource Accent}" TextDecorations="Underline">
+                                    <Span.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="OnShowPrivacyPolicyTapped" NumberOfTapsRequired="1" />
+                                    </Span.GestureRecognizers>
+                                </Span>
+                                <Span Text="." />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+
+                </Grid>
+
+                <Button Margin="0,20,0,0" Text="Aceptar"
+                        Clicked="OnButtonSendClicked"
+                        x:Name="send"
+                        BackgroundColor="{StaticResource Accent}"
+                        TextColor="White" IsEnabled="True" />
+            </StackLayout>
+        </ScrollView>
+        <StackLayout BackgroundColor="{StaticResource Accent}" Grid.Row="2" Padding="0, 5, 0, 5">
+            <Label HorizontalTextAlignment="Center" FontSize="13" TextColor="White">© Ciudad de la Raqueta</Label>
+            <Label HorizontalTextAlignment="Center" FontSize="13" TextColor="White" Margin="0,-5,0,-5">Calle Monasterio de El Paular 2, 28049, Madrid, España</Label>
+            <Label HorizontalTextAlignment="Center" FontSize="13" TextColor="White">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="91 729 79 22">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnPhoneNumberTapped" NumberOfTapsRequired="1" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </Grid>
+    
+</ContentPage>

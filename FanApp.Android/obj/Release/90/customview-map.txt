@@ -1,0 +1,66 @@
+@string/appbar_scrolling_view_behavior;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\flyoutcontent.xml
+@string/appbar_scrolling_view_behavior;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\rootlayout.xml
+adaptive-icon;obj\Release\90\res\mipmap-anydpi-v26\icon.xml
+adaptive-icon;obj\Release\90\res\mipmap-anydpi-v26\icon_round.xml
+alpha;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\anim\enterfromleft.xml
+alpha;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\anim\exittoleft.xml
+android.support.design.widget.AppBarLayout;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\flyoutcontent.xml
+android.support.design.widget.AppBarLayout;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\rootlayout.xml
+android.support.design.widget.AppBarLayout;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\shellcontent.xml
+android.support.design.widget.BottomNavigationView;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\bottomtablayout.xml
+android.support.design.widget.CoordinatorLayout;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\flyoutcontent.xml
+android.support.design.widget.CoordinatorLayout;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\rootlayout.xml
+android.support.design.widget.CoordinatorLayout;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\shellcontent.xml
+android.support.design.widget.TabLayout;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\rootlayout.xml
+android.support.design.widget.TabLayout;obj\Release\90\res\layout\tabbar.xml
+android.support.v7.widget.RecyclerView;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\flyoutcontent.xml
+android.support.v7.widget.Toolbar;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\rootlayout.xml
+android.support.v7.widget.Toolbar;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\shellcontent.xml
+android.support.v7.widget.Toolbar;obj\Release\90\res\layout\toolbar.xml
+androidhud.ProgressWheel;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\layout\loadingprogress.xml
+attr;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\values\attrs.xml
+background;obj\Release\90\res\mipmap-anydpi-v26\icon.xml
+background;obj\Release\90\res\mipmap-anydpi-v26\icon_round.xml
+cache-path;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+color;obj\Release\90\res\values\colors.xml
+corners;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\drawable\roundedbg.xml
+corners;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\drawable\roundedbgdark.xml
+declare-styleable;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\values\attrs.xml
+external-cache-path;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+external-path;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+foreground;obj\Release\90\res\mipmap-anydpi-v26\icon.xml
+foreground;obj\Release\90\res\mipmap-anydpi-v26\icon_round.xml
+FrameLayout;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\bottomtablayout.xml
+gradient;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\drawable\roundedbg.xml
+gradient;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\drawable\roundedbgdark.xml
+ImageView;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\layout\loadingimage.xml
+item;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\values\styles.xml
+item;obj\Release\90\res\values\styles.xml
+LinearLayout;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\bottomtablayout.xml
+paths;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\40\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
+ProgressBar;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\layout\loading.xml
+RelativeLayout;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\layout\loading.xml
+RelativeLayout;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\layout\loadingimage.xml
+RelativeLayout;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\layout\loadingprogress.xml
+resources;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\values\attrs.xml
+resources;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\values\strings.xml
+resources;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\values\styles.xml
+resources;obj\Release\90\res\values\colors.xml
+resources;obj\Release\90\res\values\styles.xml
+set;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\anim\enterfromleft.xml
+set;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\anim\enterfromright.xml
+set;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\anim\exittoleft.xml
+set;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\anim\exittoright.xml
+shape;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\drawable\roundedbg.xml
+shape;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\drawable\roundedbgdark.xml
+string;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\values\strings.xml
+style;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\values\styles.xml
+style;obj\Release\90\res\values\styles.xml
+TextView;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\layout\loading.xml
+TextView;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\layout\loadingimage.xml
+TextView;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\1\jl\res\layout\loadingprogress.xml
+translate;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\anim\enterfromleft.xml
+translate;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\anim\enterfromright.xml
+translate;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\anim\exittoleft.xml
+translate;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\anim\exittoright.xml
+xamarin.forms.platform.android.appcompat.FormsViewPager;D:\Sofware Factory\Ester\Fan.Mobile\FanApp\FanApp.Android\obj\Release\90\lp\41\jl\res\layout\rootlayout.xml

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FanApp.Views.LoginPage"
+             NavigationPage.HasNavigationBar="True"
+             Title="Inicio de sesión"
+             BackgroundColor="White">
+
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#5C5AA8</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <!--<RowDefinition Height="Auto" />-->
+            <RowDefinition Height="*" />
+            <RowDefinition Height="70"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+
+        <ScrollView Grid.Row="0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Image Grid.Row="0" Source="header.png" HorizontalOptions="Fill" Aspect="AspectFit" />
+                <Grid Padding="40,10,40,10" Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50*"></ColumnDefinition>
+                        <ColumnDefinition Width="50*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="0">
+                        <Label FontSize="20">Correo electrónico</Label>
+                        <Entry x:Name="email" Keyboard="Email"  Placeholder="Introduzca su correo electrónico"></Entry>
+                    </StackLayout>
+
+                    <StackLayout Grid.ColumnSpan="2" Grid.Row="1" Margin="0,20,0,20">
+                        <Label FontSize="20">Contraseña</Label>
+                        <Entry x:Name="password" IsPassword="True" Placeholder="Introduzca su contraseña"></Entry>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" Grid.Column="1">
+                        <Button Text="Entrar" BackgroundColor="{StaticResource Accent}" TextColor="White" Clicked="OnButtonLoginClicked"></Button>
+                    </StackLayout>
+
+                    <StackLayout  Grid.Row="3" Grid.ColumnSpan="2" Padding="0, 10">
+                        <Label Padding="0,10">
+                            <Label.FormattedText>
+                                <FormattedString>
+                                    <Span Text="¿No tiene una cuenta? "></Span>
+                                    <Span Text="Regístrese" TextDecorations="Underline" TextColor="{StaticResource Accent}">
+                                        <Span.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="OnRegisterTapped" NumberOfTapsRequired="1" />
+                                        </Span.GestureRecognizers>
+                                    </Span>
+                                </FormattedString>
+                            </Label.FormattedText>
+                        </Label>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </ScrollView>
+        <StackLayout BackgroundColor="{StaticResource Accent}" Grid.Row="1" Padding="0, 5, 0, 5">
+            <Label HorizontalTextAlignment="Center" FontSize="13" TextColor="White">© Ciudad de la Raqueta</Label>
+            <Label HorizontalTextAlignment="Center" FontSize="13" TextColor="White" Margin="0,-5,0,-5">Calle Monasterio de El Paular 2, 28049, Madrid, España</Label>
+            <Label HorizontalTextAlignment="Center" FontSize="13" TextColor="White">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="91 729 79 22">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnPhoneNumberTapped" NumberOfTapsRequired="1" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

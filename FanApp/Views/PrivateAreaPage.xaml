@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FanApp.Views.PrivateAreaPage"
+             xmlns:vm="clr-namespace:FanApp.ViewModels"
+             NavigationPage.HasNavigationBar="True"
+             Title="Área Privada"
+             BackgroundColor="White">
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Secondary" Priority="1" Text="Descuentos" Clicked="Discounts_Clicked"></ToolbarItem>
+        <ToolbarItem Order="Secondary" Priority="2" Text="Notificaciones" Clicked="Notifications_Clicked"></ToolbarItem>
+        <ToolbarItem Order="Secondary" Priority="3" Text="Links de interés" Clicked="Links_Clicked"></ToolbarItem>
+        <ToolbarItem Order="Secondary" Priority="4" Text="Mi perfil" Clicked="Profile_Clicked"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#5C5AA8</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+
+        <ScrollView Grid.Row="0" VerticalOptions="Start">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Image Source="header.png" HorizontalOptions="Fill" Aspect="AspectFit" Grid.Row="0" />
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="0">
+                        <Grid Padding="10,20,10,20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Image Source="icono_1.png" HorizontalOptions="Fill" Aspect="AspectFit" Grid.Column="0" />
+                            <StackLayout Grid.Column="1" VerticalOptions="Center" Padding="10,0,0,0">
+                                <Label  TextColor="{StaticResource Accent}" FontSize="24" FontAttributes="Bold" Text="{Binding Welcome}"></Label>
+                                <Label  TextColor="{StaticResource Accent}" FontSize="24" Margin="0,-10,0,0" Text="{Binding user.TitleAndFullName}"></Label>
+                                <Label>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sollicitudin iaculis sapien.</Label>
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1">
+                        <Grid Padding="10,20,10,20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="33*"></ColumnDefinition>
+                                <ColumnDefinition Width="33*"></ColumnDefinition>
+                                <ColumnDefinition Width="33*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+
+                            <StackLayout Grid.Column="0" HorizontalOptions="Center">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Discounts_Clicked"/>
+                                </StackLayout.GestureRecognizers>
+                                <Image Source="discounts.png" HorizontalOptions="Fill" Aspect="AspectFit" Margin="0,0,0,0" />
+                                <Label TextColor="{StaticResource Accent}" FontSize="13" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold">Descuentos</Label>
+                            </StackLayout>
+                            <StackLayout Grid.Column="1" HorizontalOptions="Center">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Notifications_Clicked"/>
+                                </StackLayout.GestureRecognizers>
+                                <Image Source="notifications.png" HorizontalOptions="Fill" Aspect="AspectFit" Margin="0,0,0,0" />
+                                <Label TextColor="{StaticResource Accent}" FontSize="13" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold">Notificaciones</Label>
+                            </StackLayout>
+                            <StackLayout Grid.Column="2" HorizontalOptions="Center">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Links_Clicked"/>
+                                </StackLayout.GestureRecognizers>
+                                <Image Source="links.png" HorizontalOptions="Fill" Aspect="AspectFit" Margin="0,0,0,0" />
+                                <Label TextColor="{StaticResource Accent}" FontSize="13" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" FontAttributes="Bold">Links de interés</Label>
+                            </StackLayout>
+                        </Grid>
+                    </StackLayout>
+                </Grid>
+            </Grid>
+        </ScrollView>
+
+        <StackLayout BackgroundColor="{StaticResource Accent}" Grid.Row="1" Padding="0, 5, 0, 5">
+            <Label HorizontalTextAlignment="Center" FontSize="13" TextColor="White">© Ciudad de la Raqueta</Label>
+            <Label HorizontalTextAlignment="Center" FontSize="13" TextColor="White" Margin="0,-5,0,-5">Calle Monasterio de El Paular 2, 28049, Madrid, España</Label>
+            <Label HorizontalTextAlignment="Center" FontSize="13" TextColor="White">
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="91 729 79 22">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnPhoneNumberTapped" NumberOfTapsRequired="1" />
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+
+    </Grid>
+
+    
+</ContentPage>

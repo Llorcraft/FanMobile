@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="FanApp.Views.PrivacyPage"
+             NavigationPage.HasNavigationBar="True"
+             Title="Política de Privacidad"
+             BackgroundColor="White">
+
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text ="Cerrar" Order="Primary" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    
+    <ContentPage.Content>
+        <ScrollView Padding="20,20,20,20" VerticalOptions="FillAndExpand">
+            <StackLayout VerticalOptions="FillAndExpand">
+                <Label TextType="Html" x:Name="html" Text="&lt;h1&gt;Cargando política...&lt;/h1&gt;"
+                VerticalOptions="FillAndExpand" />
+            </StackLayout>            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
